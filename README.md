@@ -2,7 +2,7 @@
 
 Site mobile-first pour Benchemsi Traiteur (Meknès). Objectif : demandes de devis, appels et messages WhatsApp.
 
-**Stack** : Next.js 15 (App Router), TypeScript, Tailwind CSS 4, Motion (animations, `prefers-reduced-motion` respecté), React Hook Form + Zod, Resend (email optionnel). Pas de CMS, pas de réservation en ligne.
+**Stack** : Next.js 15 (App Router), TypeScript, Tailwind CSS 4, Motion (animations, `prefers-reduced-motion` respecté), React Hook Form + Zod. Les devis partent uniquement par WhatsApp (pas d'email, pas de backend). Pas de CMS, pas de réservation en ligne.
 
 ## Démarrer
 
@@ -26,8 +26,7 @@ Scripts : `npm run build`, `npm run lint`, `npm run typecheck`.
 
 ## Variables d'environnement
 
-- `NEXT_PUBLIC_SITE_URL` : URL publique (sitemap, Open Graph, JSON-LD).
-- `RESEND_API_KEY`, `QUOTE_TO_EMAIL`, `QUOTE_FROM_EMAIL` : envoi des devis par email. Sans ces variables, le formulaire renvoie un message invitant à utiliser WhatsApp.
+- `NEXT_PUBLIC_SITE_URL` : URL publique (facultatif sur Vercel, le domaine de production est utilisé par défaut).
 - `NEXT_PUBLIC_PLAUSIBLE_DOMAIN` : active Plausible (événements : `whatsapp_click`, `call_click`, `quote_submit`).
 
 ## À confirmer / fournir par le client
@@ -39,5 +38,5 @@ Scripts : `npm run build`, `npm run lint`, `npm run typecheck`.
 
 ## Notes
 
-- Anti-spam du formulaire : honeypot + limitation à 5 demandes / 10 min / IP (en mémoire, par instance).
+- Le formulaire de devis ouvre WhatsApp avec un récapitulatif prérempli ; aucune donnée n'est stockée.
 - Les contenus issus d'Instagram/Google Maps n'ont pas pu être récupérés automatiquement ; tout provient du brief et des captures.

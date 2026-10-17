@@ -20,7 +20,7 @@ export default function Page() {
           <section>
             <h2 className="font-serif text-2xl font-semibold text-royal">Données personnelles</h2>
             <p className="mt-2">
-              Les informations saisies dans le formulaire de devis (nom, téléphone, détails de l&apos;événement) servent uniquement à répondre à votre demande. Conformément à la loi 09-08, vous pouvez demander leur accès, rectification ou suppression en nous contactant.
+              Le formulaire de devis ne stocke aucune donnée : les informations saisies (nom, téléphone, détails de l&apos;événement) sont transmises à Benchemsi Traiteur par WhatsApp, à votre initiative, uniquement pour répondre à votre demande. Conformément à la loi 09-08, vous pouvez demander l&apos;accès, la rectification ou la suppression de ces informations en nous contactant.
             </p>
           </section>
         </div>

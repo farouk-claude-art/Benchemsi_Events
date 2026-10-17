@@ -28,9 +28,6 @@ export const quoteSchema = z.object({
   place: z.string().trim().max(120).optional(),
   services: z.array(z.enum(["traiteur", "decoration", "materiel"])).default([]),
   message: z.string().trim().max(1500).optional(),
-  consent: z.literal(true, { error: "Votre accord est nécessaire pour traiter votre demande." }),
-  // honeypot : doit rester vide
-  website: z.string().max(0).optional(),
 });
 
 export type QuoteInput = z.input<typeof quoteSchema>;

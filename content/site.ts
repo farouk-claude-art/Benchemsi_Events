@@ -41,7 +41,9 @@ export const site = {
 
 export type Site = typeof site;
 
-export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").replace(/\/$/, "");
+// Priorité : URL explicite, sinon domaine de production Vercel, sinon local.
+const vercelUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL && `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`;
+export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || vercelUrl || "http://localhost:3000").replace(/\/$/, "");
 
 export function whatsappLink(message = "Bonjour Benchemsi Traiteur, je souhaite un devis pour ..."): string {
   return `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(message)}`;

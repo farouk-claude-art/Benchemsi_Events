@@ -31,7 +31,7 @@ Scripts : `npm run build`, `npm run lint`, `npm run typecheck`.
 
 ## À confirmer / fournir par le client
 
-- Numéro WhatsApp (`+212 664 908 806` utilisé pour l'instant), adresse exacte (flyer : « N 82 Rue 8 Car ELAMAN 1 »), horaires, email, URL de la page Facebook.
+- Adresse exacte (flyer : « N 82 Rue 8 Car ELAMAN 1 »), horaires, email, URL de la page Facebook.
 - Logo HD (SVG) : le site utilise un titre typographique en attendant.
 - 30–50 photos HD, formules et prix de la Lunch Box, zone de livraison, avis réels, signification de « Myadi » (non utilisé).
 - Créer la fiche Google Business Profile, puis renseigner `mapsUrl`.

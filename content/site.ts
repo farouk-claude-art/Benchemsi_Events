@@ -16,7 +16,7 @@ export const site = {
     { display: "06 64 90 88 06", tel: "+212664908806" },
     { display: "06 62 03 45 34", tel: "+212662034534" },
   ],
-  // TODO: confirmer que ce numéro est bien sur WhatsApp.
+  // Numéro WhatsApp confirmé par le client.
   whatsapp: "212664908806",
 
   // TODO: adresse issue du flyer « N 82 Rue 8 Car ELAMAN 1 » — à confirmer avant affichage.
